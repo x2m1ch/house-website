@@ -1,4 +1,4 @@
-# House Ink (frontend part)
+# House Ink
 
 ## Содержание
 * [Технологии](#технологии)
