@@ -1,4 +1,4 @@
-import starPromo from "../assets/sections/main/promo/star.svg";
+import starPromo from "/assets/sections/main/promo/star.svg";
 
 import "./styles/promo.css";
 

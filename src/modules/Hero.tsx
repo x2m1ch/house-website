@@ -1,4 +1,4 @@
-import birdHero from "../assets/sections/main/hero/bird.png";
+import birdHero from "/assets/sections/main/hero/bird.png";
 
 import "./styles/hero.css";
 

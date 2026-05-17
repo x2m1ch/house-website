@@ -1,7 +1,7 @@
-import logo from "../assets/favicon/icon.svg";
-import facebook from "../assets/sections/footer/facebook.svg";
-import youtube from "../assets/sections/footer/youtube.svg";
-import instagram from "../assets/sections/footer/instagram.svg";
+import logo from "/assets/favicon/icon.svg";
+import facebook from "/assets/sections/footer/facebook.svg";
+import youtube from "/assets/sections/footer/youtube.svg";
+import instagram from "/assets/sections/footer/instagram.svg";
 
 import "./styles/footer.css";
 

@@ -1,7 +1,7 @@
-import ourTeamImage from "../assets/sections/main/our-team/our-team-img.png";
-import personImageOne from "../assets/sections/main/our-team/team-persons/person-one.svg";
-import personImageTwo from "../assets/sections/main/our-team/team-persons/person-two.svg";
-import personImageThree from "../assets/sections/main/our-team/team-persons/person-three.svg";
+import ourTeamImage from "/assets/sections/main/our-team/our-team-img.png";
+import personImageOne from "/assets/sections/main/our-team/team-persons/person-one.svg";
+import personImageTwo from "/assets/sections/main/our-team/team-persons/person-two.svg";
+import personImageThree from "/assets/sections/main/our-team/team-persons/person-three.svg";
 
 import "./styles/our-team.css";
 
