@@ -1,78 +1,40 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
-import { France, Germany, England } from "./cards";
+import { type Card, France, Germany, England } from "./cards";
 
 import "./styles/catalog.css";
-import "./styles/cards.css"
+import "./styles/cards.css";
 
 const Catalog = () => {
   const [stateButtonSwitchCards, setStateButtonSwitchCard] = useState("france");
 
-  const switchCards1 = () => {
+  const renderCard = (data: object[]) =>
+    (data as Card[]).map((card) => (
+      <article className="card">
+        <section className="card-header">
+          {card.src && <img src={card.src} className="card-image" />}
+          <p className="card-creator">{card.creator}</p>
+          <h3 className="card-name">{card.name}</h3>
+          <p className="card-feature">{card.feature}</p>
+        </section>
+
+        <section className="card-bottom">
+          <p className="card-price">{card.price}</p>
+          <Link to="/">В корзину</Link>
+        </section>
+      </article>
+    ));
+
+  const switchCards = () => {
     if (stateButtonSwitchCards == "france") {
-      return France.map((card) => (
-        <article className="card">
-          <section className="card-header">
-            {card.src && (
-              <img src={card.src} className="card-image" />
-            )}
-            <p className="card-creator">{card.creator}</p>
-            <h3 className="card-name">{card.name}</h3>
-            <p className="card-feature">{card.feature}</p>
-          </section>
-
-          <section className="card-bottom">
-            <p className="card-price">{card.price}</p>
-            <a className="add-to-basket" href="/">
-              В корзину
-            </a>
-          </section>
-        </article>
-      ));
+      return renderCard(France);
     }
-
     if (stateButtonSwitchCards == "germany") {
-      return Germany.map((card) => (
-        <article className="card">
-          <section className="card-header">
-            {card.src && (
-              <img src={card.src} className="card-image" />
-            )}
-            <p className="card-creator">{card.creator}</p>
-            <h3 className="card-name">{card.name}</h3>
-            <p className="card-feature">{card.feature}</p>
-          </section>
-
-          <section className="card-bottom">
-            <p className="card-price">{card.price}</p>
-            <a className="add-to-basket" href="/">
-              В корзину
-            </a>
-          </section>
-        </article>
-      ));
+      return renderCard(Germany);
     }
-
     if (stateButtonSwitchCards == "england") {
-      return England.map((card) => (
-        <article className="card">
-          <section className="card-header">
-            {card.src && (
-              <img src={card.src} className="card-image" />
-            )}
-            <p className="card-creator">{card.creator}</p>
-            <h3 className="card-name">{card.name}</h3>
-            <p className="card-feature">{card.feature}</p>
-          </section>
-
-          <section className="card-bottom">
-            <p className="card-price">{card.price}</p>
-            <a className="add-to-basket" href="/">
-              В корзину
-            </a>
-          </section>
-        </article>
-      ));
+      return renderCard(England);
     }
   };
 
@@ -103,9 +65,7 @@ const Catalog = () => {
         </section>
       </section>
 
-      <section className="catalog-body">
-        {switchCards1()}
-      </section>
+      <section className="catalog-body">{switchCards()}</section>
     </section>
   );
 };

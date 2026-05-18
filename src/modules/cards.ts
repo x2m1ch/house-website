@@ -1,4 +1,4 @@
-interface Card {
+export interface Card {
   src: string;
   creator: string;
   name: string;
