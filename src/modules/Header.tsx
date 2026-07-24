@@ -1,6 +1,9 @@
 import logo from "/assets/favicon/icon.svg";
 
 import "./styles/header.css";
+import { Link } from "react-router";
+
+const header = ["Репродукции", "Новинки", "О нас"];
 
 const Header = () => {
   return (
@@ -11,16 +14,12 @@ const Header = () => {
       </a>
 
       <nav>
-        <a className="nav-buttons" href="/">
-          Репродукции
-        </a>
-        <a className="nav-buttons" href="/">
-          Новинки
-        </a>
-        <a className="nav-buttons" href="/">
-          О нас
-        </a>
-        <a className="basket" href="/"></a>
+        {header.map((header) => (
+          <Link className="nav-buttons" to="/">
+            {header}
+          </Link>
+        ))}
+        <Link className="basket" to="/"></Link>
       </nav>
     </header>
   );

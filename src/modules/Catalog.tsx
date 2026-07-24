@@ -21,7 +21,7 @@ const Catalog = () => {
 
         <section className="card-bottom">
           <p className="card-price">{card.price}</p>
-          <Link to="/">В корзину</Link>
+          <Link className="add-to-basket" to="/">В корзину</Link>
         </section>
       </article>
     ));

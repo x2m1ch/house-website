@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import starPromo from "/assets/sections/main/promo/star.svg";
 
 import "./styles/promo.css";
@@ -22,9 +24,9 @@ const Promo = () => {
           обучения кадров предопределяет высокую <br /> востребованность
           направлений прогрессивного развития.
         </p>
-        <a href="/" className="show-france-picture">
+        <Link to="/" className="show-france-picture">
           Ознакомиться
-        </a>
+        </Link>
       </section>
     </section>
   );

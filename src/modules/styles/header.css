@@ -51,17 +51,17 @@ nav {
 }
 
 .basket {
-    background: url(/src/assets/sections/header/basket.svg);
+    background: url(/assets/sections/header/basket.svg);
     width: 24px;
     height: 24px;
 }
 
 .basket:hover {
-    background: url(/src/assets/sections/header/basket-hover.svg);
+    background: url(/assets/sections/header/basket-hover.svg);
 }
 
 .basket:active {
-    background: url(/src/assets/sections/header/basket-active.svg);
+    background: url(/assets/sections/header/basket-active.svg);
 }
 
 a {
