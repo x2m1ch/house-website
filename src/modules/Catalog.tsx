@@ -6,11 +6,11 @@ import { type Card, France, Germany, England } from "./cards";
 import "./styles/catalog.css";
 import "./styles/cards.css";
 
-const Catalog = () => {
+export const Catalog = () => {
   const [stateButtonSwitchCards, setStateButtonSwitchCard] = useState("france");
 
-  const renderCard = (data: object[]) =>
-    (data as Card[]).map((card) => (
+  const renderCard = (data: Card[]) =>
+    data.map((card) => (
       <article className="card">
         <section className="card-header">
           {card.src && <img src={card.src} className="card-image" />}
@@ -21,22 +21,19 @@ const Catalog = () => {
 
         <section className="card-bottom">
           <p className="card-price">{card.price}</p>
-          <Link className="add-to-basket" to="/">В корзину</Link>
+          <Link className="add-to-basket" to="/">
+            В корзину
+          </Link>
         </section>
       </article>
     ));
 
-  const switchCards = () => {
-    if (stateButtonSwitchCards == "france") {
-      return renderCard(France);
-    }
-    if (stateButtonSwitchCards == "germany") {
-      return renderCard(Germany);
-    }
-    if (stateButtonSwitchCards == "england") {
-      return renderCard(England);
-    }
-  };
+  const switchCards = () =>
+    stateButtonSwitchCards == "germany"
+      ? renderCard(Germany)
+      : stateButtonSwitchCards == "england"
+        ? renderCard(England)
+        : renderCard(France);
 
   return (
     <section className="catalog">

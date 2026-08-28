@@ -1,11 +1,14 @@
 import ourTeamImage from "/assets/sections/main/our-team/our-team-img.png";
-import personImageOne from "/assets/sections/main/our-team/team-persons/person-one.svg";
-import personImageTwo from "/assets/sections/main/our-team/team-persons/person-two.svg";
-import personImageThree from "/assets/sections/main/our-team/team-persons/person-three.svg";
 
 import "./styles/our-team.css";
 
-const OurTeam = () => {
+const IMAGES = [
+  "/assets/sections/main/our-team/team-persons/person-one.svg",
+  "/assets/sections/main/our-team/team-persons/person-two.svg",
+  "/assets/sections/main/our-team/team-persons/person-three.svg",
+];
+
+export const OurTeam = () => {
   return (
     <section className="our-team-section">
       <section className="our-team-left">
@@ -21,9 +24,9 @@ const OurTeam = () => {
           <br /> от того, что консультация с широким активом.
         </p>
         <section className="persons">
-          <img src={personImageOne} alt="" />
-          <img src={personImageTwo} alt="" />
-          <img src={personImageThree} alt="" />
+          {IMAGES.map((image) => (
+            <img src={image}></img>
+          ))}
         </section>
       </section>
     </section>

@@ -1,11 +1,12 @@
+import { Link } from "react-router";
+
 import logo from "/assets/favicon/icon.svg";
 
 import "./styles/header.css";
-import { Link } from "react-router";
 
 const header = ["Репродукции", "Новинки", "О нас"];
 
-const Header = () => {
+export const Header = () => {
   return (
     <header>
       <a className="logo" href="/">

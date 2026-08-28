@@ -2,7 +2,7 @@ import birdHero from "/assets/sections/main/hero/bird.png";
 
 import "./styles/hero.css";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="hero">
       <section className="left-hero">

@@ -4,7 +4,7 @@ import starPromo from "/assets/sections/main/promo/star.svg";
 
 import "./styles/promo.css";
 
-const Promo = () => {
+export const Promo = () => {
   return (
     <section className="promo">
       <section className="promo-header">
@@ -31,5 +31,3 @@ const Promo = () => {
     </section>
   );
 };
-
-export default Promo;
