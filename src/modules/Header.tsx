@@ -1,12 +1,18 @@
 import { Link } from "react-router";
+import { useState } from "react";
 
 import logo from "/assets/favicon/icon.svg";
+import busket from "/assets/sections/header/basket.svg";
+import busketHover from "/assets/sections/header/basket-hover.svg";
+import busketActive from "/assets/sections/header/basket-active.svg";
 
 import "./styles/header.css";
 
 const header = ["Репродукции", "Новинки", "О нас"];
 
 export const Header = () => {
+  const [stateBusket, setStateBusket] = useState("passive");
+
   return (
     <header>
       <a className="logo" href="/">
@@ -20,7 +26,24 @@ export const Header = () => {
             {header}
           </Link>
         ))}
-        <Link className="basket" to="/"></Link>
+        <Link
+          onMouseEnter={() => setStateBusket("active")}
+          onMouseLeave={() => setStateBusket("passive")}
+          onMouseUp={() => setStateBusket("hover")}
+          className="basket"
+          to="/"
+        >
+          <img
+            src={
+              stateBusket == "passive"
+                ? busket
+                : stateBusket == "active"
+                  ? busketActive
+                  : busketHover
+            }
+            alt=""
+          />
+        </Link>
       </nav>
     </header>
   );

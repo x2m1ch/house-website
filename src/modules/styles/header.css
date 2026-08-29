@@ -50,20 +50,21 @@ nav {
   color: #598d66;
 }
 
-.basket {
-  background: url(/assets/sections/header/basket.svg);
-  width: 24px;
-  height: 24px;
-}
-
-.basket:hover {
-  background: url(/assets/sections/header/basket-hover.svg);
-}
-
-.basket:active {
-  background: url(/assets/sections/header/basket-active.svg);
-}
-
 a {
   color: #2c2d35;
+}
+
+@media (max-width: 850px) {
+  .nav-buttons {
+    font-size: 14px;
+  }
+
+  .basket {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo > img {
+    width: 26px;
+  }
 }
