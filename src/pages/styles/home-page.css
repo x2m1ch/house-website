@@ -1,0 +1,18 @@
+:root {
+  --page-padding: 340px;
+}
+
+header,
+.hero,
+.catalog,
+.our-team-section {
+  padding: 0 var(--page-padding);
+}
+
+.promo {
+  padding: 60px var(--page-padding);
+}
+
+footer {
+  padding: 30px var(--page-padding);
+}

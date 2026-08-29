@@ -1,71 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 footer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 
-    background-color: #E1EDE6;
-    padding: 30px 30px;
-    margin-top: 80px;
+  background-color: #e1ede6;
+  margin-top: 80px;
 
-    font-family: 'Raleway';
-    font-weight: 500;
+  font-family: "Raleway";
+  font-weight: 500;
 }
 
 /* Footer Left */
 
 .footer-left {
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-left-bottom {
-    gap: 4px;
-    display: flex;
-    flex-direction: column;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer Center */
 
 .footer-center {
-    gap: 50px;
-    display: flex;
+  gap: 50px;
+  display: flex;
 }
 
 .footer-center-columns {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .columns-body {
-    gap: 7px;
-    display: flex;
-    flex-direction: column;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer Right */
 
 .footer-right {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .messanger-logos {
-    gap: 35px;
-    display: flex;
+  gap: 35px;
+  display: flex;
 }
 
 .rights {
-    gap: 4px;
-    display: flex;
-    flex-direction: column;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Other */
 
 p {
-    color: #86928B;
+  color: #86928b;
 }

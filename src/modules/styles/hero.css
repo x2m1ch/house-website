@@ -1,50 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .hero {
-    gap: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    font-family: 'Raleway';
-    font-weight: 500;
+  font-family: "Raleway";
+  font-weight: 500;
 }
 
 .right-hero {
-    gap: 30px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
+  gap: 30px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .hero-content-head {
-    color: #2C2D35;
-    font-size: 60px;
+  color: #2c2d35;
+  font-size: 60px;
 }
 
 .hero-content-body {
-    color: #86928B;
-    font-size: 18px;
+  color: #86928b;
+  font-size: 18px;
 }
 
 .hero-button {
-    background-color: white;
-    border-color: #598D66;
-    border-width: 1px;
-    border-style: solid;
-    padding: 20px 60px;
+  background-color: white;
+  border-color: #598d66;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 60px;
 
-    color: #598D66;
+  color: #598d66;
 }
 
 .hero-button:active {
-    background-color: #376B44;
+  background-color: #376b44;
 
-    color: white;
+  color: white;
 }
 
 .hero-button:hover {
-    background-color: #598D66;
+  background-color: #598d66;
 
-    color: #F4F6F5;
+  color: #f4f6f5;
 }

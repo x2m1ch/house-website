@@ -5,6 +5,8 @@ import Promo from "../modules/Promo";
 import OurTeam from "../modules/OurTeam";
 import Footer from "../modules/Footer";
 
+import "./styles/home-page.css";
+
 export const HomePage = () => {
   return (
     <>
