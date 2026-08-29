@@ -16,3 +16,27 @@ header,
 footer {
   padding: 30px var(--page-padding);
 }
+
+@media (max-width: 1770px) {
+  :root {
+    --page-padding: 240px;
+  }
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --page-padding: 160px;
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --page-padding: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --page-padding: 40px;
+  }
+}

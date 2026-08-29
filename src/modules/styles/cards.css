@@ -1,67 +1,68 @@
 .card {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-    width: 1fr;
-    height: auto;
-    padding: 15px;
+  width: 1fr;
+  height: auto;
+  padding: 15px;
 
-    background-color: #E1EDE6;
+  background-color: #e1ede6;
 
-    font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .card-header {
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-bottom {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-image {
-    width: 100%;
+  width: 100%;
 }
 
 .card-creator {
-    color: #86928B;
-    font-size: 18px;
+  color: #86928b;
+  font-size: 18px;
 }
 
 .card-name {
-    color: #2C2D35;
-    font-size: 30px;
+  color: #2c2d35;
+  font-size: 30px;
 }
 
 .card-price {
-    color: #598D66;
-    font-size: 24px;
+  color: #598d66;
+  font-size: 24px;
 }
 
 .add-to-basket {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    color: #598D66;
+  color: #598d66;
 
-    padding: 20px;
-    background-color: #E1EDE6;
-    border-color: #598D66;
-    border-width: 1px;
-    border-style: solid;
+  padding: 20px;
+  background-color: #e1ede6;
+  border-color: #598d66;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .add-to-basket:active {
-    background-color: #376B44;
-    color: white;
+  background-color: #376b44;
+  color: white;
 }
 
 .add-to-basket:hover {
-    background-color: #598D66;
-    color: #F4F6F5;
+  background-color: #598d66;
+  color: #f4f6f5;
 }

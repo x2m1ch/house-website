@@ -7,6 +7,8 @@
 
   font-family: "Raleway";
   font-weight: 500;
+
+  margin-bottom: 40px;
 }
 
 .right-hero {
@@ -18,7 +20,7 @@
 
 .hero-content-head {
   color: #2c2d35;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .hero-content-body {
@@ -46,4 +48,59 @@
   background-color: #598d66;
 
   color: #f4f6f5;
+}
+
+@media (max-width: 1300px) {
+  .left-hero > img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .left-hero > img {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .hero-content-head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1070px) {
+}
+
+@media (max-width: 960px) {
+  .right-hero {
+    gap: 25px;
+  }
+
+  .hero-content-head {
+    font-size: 44px;
+  }
+
+  .hero-button {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-content-head {
+    font-size: 40px;
+  }
+
+  .hero-content-body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero-content-head {
+    font-size: 36px;
+  }
+
+  .hero-content-body {
+    font-size: 14px;
+  }
 }
