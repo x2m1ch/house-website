@@ -55,3 +55,22 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 700px) {
+  .catalog-header {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 463px) {
+  .select-country-buttons {
+    overflow-x: scroll;
+  }
+}

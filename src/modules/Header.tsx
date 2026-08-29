@@ -21,11 +21,11 @@ export const Header = () => {
       </a>
 
       <nav>
-        {header.map((header) => (
-          <Link className="nav-buttons" to="/">
-            {header}
-          </Link>
-        ))}
+        <section className="nav-buttons">
+          {header.map((header) => (
+            <Link to="/">{header}</Link>
+          ))}
+        </section>
         <Link
           onMouseEnter={() => setStateBusket("active")}
           onMouseLeave={() => setStateBusket("passive")}

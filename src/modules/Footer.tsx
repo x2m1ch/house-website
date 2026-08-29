@@ -12,9 +12,6 @@ interface CenterColumn extends Column {
 
 const COLUMNS: Column[] = [
   {
-    name: "footer-left",
-  },
-  {
     name: "footer-center",
   },
   {
@@ -61,53 +58,55 @@ const RIGHT_COLUMNS: Column[] = [
 export const Footer = () => {
   return (
     <footer>
-      {COLUMNS.map((column) => (
-        <section className={column.name}>
-          {column.name == "footer-left" ? (
-            <>
-              <div className="logo">
-                <img src={logo} alt="" />
-                <h2 className="icon">Ink. House</h2>
-              </div>
+      <section className="footer-left">
+        <div className="footer-logo">
+          <img src={logo} alt="" />
+          <h2 className="icon">Ink. House</h2>
+        </div>
 
-              <section className="footer-left-bottom">
-                <p style={{ color: "#2C2D35" }}>+7 (999) 543-54-54</p>
-                <p>Мастерская</p>
-              </section>
-            </>
-          ) : column.name == "footer-center" ? (
-            <>
-              {CENTER_COLUMNS.map((column) => (
-                <section
-                  className={`footer-center-columns footer-column-${column.body == CENTER_COLUMNS_BODY.one ? "one" : column.body == CENTER_COLUMNS_BODY.two ? "two" : "three"}`}
-                >
-                  <h2>{column.name}</h2>
-                  <section className="columns-body">
-                    {column.body.map((body) => (
-                      <p>{body}</p>
-                    ))}
-                  </section>
-                </section>
-              ))}
-            </>
-          ) : (
-            <>
-              {RIGHT_COLUMNS.map((column) => (
-                <section className={column.name}>
-                  {column.name == "messanger-logos" ? (
-                    IMAGES.map((image) => <img src={image}></img>)
-                  ) : (
-                    <>
-                      <p>Ink. House ®</p>
-                      <p>All rights reserved</p>
-                    </>
-                  )}
-                </section>
-              ))}
-            </>
-          )}
+        <section className="footer-left-bottom">
+          <p style={{ color: "#2C2D35" }}>+7 (999) 543-54-54</p>
+          <p>Мастерская</p>
         </section>
-      ))}
+      </section>
+
+      <section className="footer-information">
+        {COLUMNS.map((column) => (
+          <section className={column.name}>
+            {column.name == "footer-center" ? (
+              <>
+                {CENTER_COLUMNS.map((column) => (
+                  <section
+                    className={`footer-center-columns footer-column-${column.body == CENTER_COLUMNS_BODY.one ? "one" : column.body == CENTER_COLUMNS_BODY.two ? "two" : "three"}`}
+                  >
+                    <h2>{column.name}</h2>
+                    <section className="columns-body">
+                      {column.body.map((body) => (
+                        <p>{body}</p>
+                      ))}
+                    </section>
+                  </section>
+                ))}
+              </>
+            ) : (
+              <>
+                {RIGHT_COLUMNS.map((column) => (
+                  <section className={column.name}>
+                    {column.name == "messanger-logos" ? (
+                      IMAGES.map((image) => <img src={image}></img>)
+                    ) : (
+                      <>
+                        <p>Ink. House ®</p>
+                        <p>All rights reserved</p>
+                      </>
+                    )}
+                  </section>
+                ))}
+              </>
+            )}
+          </section>
+        ))}
+      </section>
     </footer>
   );
 };

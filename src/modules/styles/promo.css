@@ -61,3 +61,41 @@
 .show-france-picture:active {
   background-color: #d9b949;
 }
+
+@media (max-width: 600px) {
+  .promo-header > img {
+    width: 70px;
+  }
+
+  .heading-promo {
+    font-size: 30px;
+  }
+
+  .show-france-picture {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-header {
+    align-items: flex-start;
+  }
+
+  .heading-promo {
+    font-size: 27px;
+  }
+
+  .show-france-picture {
+    padding: 13px 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .promo-header > img {
+    width: 60px;
+  }
+
+  .heading-promo {
+    font-size: 25px;
+  }
+}

@@ -9,6 +9,7 @@
   font-weight: 500;
 
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .right-hero {
@@ -102,5 +103,29 @@
 
   .hero-content-body {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-hero {
+    gap: 15px;
+  }
+
+  .hero-content-head {
+    font-size: 29px;
+  }
+
+  .hero-button {
+    padding: 10px 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-hero {
+    display: none;
+  }
+
+  .hero-content-body {
+    max-width: 230px;
   }
 }

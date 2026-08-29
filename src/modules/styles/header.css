@@ -39,7 +39,8 @@ nav {
 }
 
 .nav-buttons {
-  text-decoration: none;
+  gap: 60px;
+  display: flex;
 }
 
 .nav-buttons:active {
@@ -66,5 +67,34 @@ a {
 
   .logo > img {
     width: 26px;
+  }
+}
+
+@media (max-width: 630px) {
+  header {
+    flex-direction: column;
+
+    height: 90px;
+  }
+
+  .logo {
+    justify-content: center;
+
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #c3d1c6 1px solid;
+  }
+
+  nav {
+    gap: 0;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .nav-buttons {
+    gap: 40px;
   }
 }
