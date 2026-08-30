@@ -2,7 +2,10 @@
   --page-padding: 340px;
 }
 
-header,
+header {
+  padding: 20px var(--page-padding);
+}
+
 .hero,
 .catalog,
 .our-team-section {
@@ -38,5 +41,15 @@ footer {
 @media (max-width: 1300px) {
   :root {
     --page-padding: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  :root {
+    --page-padding: 20px;
+  }
+
+  header {
+    padding: 0;
   }
 }
