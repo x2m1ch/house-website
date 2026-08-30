@@ -1,60 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .promo {
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 
-    background: url(/assets/sections/main/promo/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: url(/assets/sections/main/promo/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    padding: 60px 200px;
-    margin: 60px 0;
+  margin: 60px 0;
 }
 
 /* Promo Header */
 
 .promo-header {
-    gap: 20px;
-    display: flex;
+  gap: 20px;
+  display: flex;
 }
 
 .heading-promo {
-    color: #F4F6F5;
-    font-family: 'Raleway';
-    font-size: 42px;
+  color: #f4f6f5;
+  font-family: "Raleway";
+  font-size: 42px;
+
+  max-width: 500px;
 }
 
 /* Promo Body */
 
 .promo-body {
-    gap: 50px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
+  gap: 50px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .promo-text-body {
-    color: white;
-    font-family: 'Raleway';
-    font-size: 19px;
+  color: white;
+  font-family: "Raleway";
+  font-size: 19px;
+
+  max-width: 570px;
 }
 
 .show-france-picture {
-    background-color: #EEDB6D;
+  background-color: #eedb6d;
 
-    color: #2C2D35;
-    font-family: 'Raleway';
-    font-weight: 500;
+  color: #2c2d35;
+  font-family: "Raleway";
+  font-weight: 500;
 
-    padding: 20px 60px;
+  padding: 20px 60px;
 }
 
 .show-france-picture:hover {
-    background-color: #FAEB97;
+  background-color: #faeb97;
 }
 
 .show-france-picture:active {
-    background-color: #D9B949;
+  background-color: #d9b949;
+}
+
+@media (max-width: 600px) {
+  .promo-header > img {
+    width: 70px;
+  }
+
+  .heading-promo {
+    font-size: 30px;
+  }
+
+  .show-france-picture {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-header {
+    align-items: flex-start;
+  }
+
+  .heading-promo {
+    font-size: 27px;
+  }
+
+  .show-france-picture {
+    padding: 13px 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .promo-header > img {
+    width: 60px;
+  }
+
+  .heading-promo {
+    font-size: 25px;
+  }
 }

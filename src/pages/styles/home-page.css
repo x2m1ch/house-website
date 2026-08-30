@@ -1,0 +1,55 @@
+:root {
+  --page-padding: 340px;
+}
+
+header {
+  padding: 20px var(--page-padding);
+}
+
+.hero,
+.catalog,
+.our-team-section {
+  padding: 0 var(--page-padding);
+}
+
+.promo {
+  padding: 60px var(--page-padding);
+}
+
+footer {
+  padding: 30px var(--page-padding);
+}
+
+@media (max-width: 1770px) {
+  :root {
+    --page-padding: 240px;
+  }
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --page-padding: 160px;
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --page-padding: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --page-padding: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  :root {
+    --page-padding: 20px;
+  }
+
+  header {
+    padding: 0;
+  }
+}

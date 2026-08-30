@@ -1,33 +1,42 @@
 .our-team-section {
-    gap: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  gap: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #2C2D35;
-    font-family: "Raleway";
-    font-weight: 500;
+  color: #2c2d35;
+  font-family: "Raleway";
+  font-weight: 500;
 }
 
 .our-team-right {
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .our-team-head {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .our-team-body {
-    font-size: 21px;
-    font-weight: 400;
+  font-size: 21px;
+  font-weight: 400;
+
+  max-width: 830px;
 }
 
 .persons {
-    gap: 20px;
-    display: flex;
+  gap: 20px;
+  display: flex;
 }
 
+@media (max-width: 1020px) {
+  .our-team-section {
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,53 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .catalog {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 
-    color: #2C2D35;
-    font-family: 'Raleway';
+  color: #2c2d35;
+  font-family: "Raleway";
 }
 
 /* Catalog Head */
 
 .catalog-header {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-head {
-    font-size: 30px;
-    font-weight: 500;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .select-country-buttons {
-    gap: 32px;
-    display: flex;
+  gap: 32px;
+  display: flex;
 }
 
 .cards-switch-buttons {
-    background-color: #D4E8D9;
-    border-radius: 20px;
-    padding: 10px 20px;
+  background-color: #d4e8d9;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .cards-switch-buttons:active {
-    background-color: #376B44;
-    color: #F4F6F5;
+  background-color: #376b44;
+  color: #f4f6f5;
 }
 
 .cards-switch-buttons:hover {
-    background-color: #598D66;
-    color: #F4F6F5;
+  background-color: #598d66;
+  color: #f4f6f5;
 }
 
 /* Catalog Body */
 
 .catalog-body {
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-    padding: 0 340px;
+@media (max-width: 950px) {
+  .catalog-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .catalog-header {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 463px) {
+  .select-country-buttons {
+    overflow-x: scroll;
+  }
 }
