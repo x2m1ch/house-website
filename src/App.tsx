@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "../src/pages/HomePage";
 
 import "./reset.css";
 
