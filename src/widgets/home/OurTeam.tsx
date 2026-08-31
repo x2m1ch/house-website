@@ -1,13 +1,13 @@
-import ourTeamImage from "/assets/sections/main/our-team/our-team-img.png";
+import ourTeamImage from "/assets/widgets/home/our-team/our-team-img.png";
 
 import "../../app/styles/pages/home/widgets/our-team.css";
 
 const baseUrl = import.meta.env.BASE_URL;
 
 const IMAGES = [
-  `${baseUrl}assets/sections/main/our-team/team-persons/person-one.svg`,
-  `${baseUrl}assets/sections/main/our-team/team-persons/person-two.svg`,
-  `${baseUrl}assets/sections/main/our-team/team-persons/person-three.svg`,
+  `${baseUrl}assets/widgets/home/our-team/team-persons/person-one.svg`,
+  `${baseUrl}assets/widgets/home/our-team/team-persons/person-two.svg`,
+  `${baseUrl}assets/widgets/home/our-team/team-persons/person-three.svg`,
 ];
 
 export const OurTeam = () => {

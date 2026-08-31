@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import birdHero from "/assets/sections/main/hero/bird.png";
+import birdHero from "/assets/widgets/home/hero/bird.png";
 
 import "../../app/styles/pages/home/widgets/hero.css";
 

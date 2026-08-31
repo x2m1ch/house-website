@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import starPromo from "/assets/sections/main/promo/star.svg";
+import starPromo from "/assets/widgets/home/promo/star.svg";
 
 import "../../app/styles/pages/home/widgets/promo.css";
 

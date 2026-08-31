@@ -2,11 +2,11 @@ import { Link } from "react-router";
 import { useState } from "react";
 
 import logo from "/assets/favicon/icon.svg";
-import busket from "/assets/sections/header/basket.svg";
-import busketHover from "/assets/sections/header/basket-hover.svg";
-import busketActive from "/assets/sections/header/basket-active.svg";
-import burger from "/assets/sections/header/burger.svg";
-import burgerActive from "/assets/sections/header/burger-active.svg";
+import busket from "/assets/shared/header/basket.svg";
+import busketHover from "/assets/shared/header/basket-hover.svg";
+import busketActive from "/assets/shared/header/basket-active.svg";
+import burger from "/assets/shared/header/burger.svg";
+import burgerActive from "/assets/shared/header/burger-active.svg";
 
 import "../app/styles/shared/header.css";
 

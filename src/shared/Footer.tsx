@@ -45,9 +45,9 @@ const CENTER_COLUMNS: CenterColumn[] = [
 ];
 
 const IMAGES = [
-  `${baseUrl}assets/sections/footer/facebook.svg`,
-  `${baseUrl}assets/sections/footer/youtube.svg`,
-  `${baseUrl}assets/sections/footer/instagram.svg`,
+  `${baseUrl}assets/shared/footer/facebook.svg`,
+  `${baseUrl}assets/shared/footer/youtube.svg`,
+  `${baseUrl}assets/shared/footer/instagram.svg`,
 ];
 
 const RIGHT_COLUMNS: Column[] = [
