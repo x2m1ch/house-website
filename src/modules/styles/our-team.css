@@ -10,7 +10,7 @@
 }
 
 .our-team-right {
-  gap: 30px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
 
@@ -38,5 +38,21 @@
     gap: 0px;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-team-head {
+    font-size: 40px;
+  }
+
+  .our-team-body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-team-head {
+    font-size: 32px;
   }
 }

@@ -69,9 +69,6 @@
   }
 }
 
-@media (max-width: 1070px) {
-}
-
 @media (max-width: 960px) {
   .right-hero {
     gap: 25px;
@@ -108,7 +105,7 @@
 
 @media (max-width: 600px) {
   .right-hero {
-    gap: 15px;
+    gap: 20px;
   }
 
   .hero-content-head {

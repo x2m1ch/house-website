@@ -25,6 +25,10 @@ header {
   text-decoration: none;
 }
 
+.logo > img {
+  width: 26px;
+}
+
 .icon {
   font-size: 16px;
 }
@@ -67,10 +71,6 @@ a {
     width: 20px;
     height: 20px;
   }
-
-  .logo > img {
-    width: 26px;
-  }
 }
 
 @media (max-width: 630px) {
@@ -104,10 +104,16 @@ a {
   .logo {
     border-bottom: none;
     background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .icon {
+    font-size: 18px;
   }
 
   nav {
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 
   .nav-buttons {
@@ -116,5 +122,9 @@ a {
 
   nav > img {
     display: block;
+  }
+
+  .basket {
+    width: 30px;
   }
 }

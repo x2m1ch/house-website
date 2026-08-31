@@ -66,3 +66,31 @@
   background-color: #598d66;
   color: #f4f6f5;
 }
+
+@media (max-width: 1120px) {
+  .card-creator {
+    font-size: 16px;
+  }
+
+  .card-name {
+    font-size: 25px;
+  }
+
+  .card-price {
+    font-size: 20px;
+  }
+
+  .add-to-basket {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-image {
+    max-height: 430px;
+  }
+
+  .add-to-basket {
+    padding: 10px;
+  }
+}
