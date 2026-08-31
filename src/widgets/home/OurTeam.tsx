@@ -13,19 +13,17 @@ const IMAGES = [
 export const OurTeam = () => {
   return (
     <section className="our-team-section">
-      <section className="our-team-left">
-        <img src={ourTeamImage} alt="" />
-      </section>
+      <img src={ourTeamImage} alt="" />
 
       <section className="our-team-right">
-        <h2 className="our-team-head">Наша команда</h2>
-        <p className="our-team-body">
+        <h2>Наша команда</h2>
+        <p>
           Значимость этих проблем настолько очевидна, что базовый вектор
           развития позволяет оценить значение экспериментов, поражающих по своей
           масштабности и грандиозности. Мы вынуждены отталкиваться от того, что
           консультация с широким активом.
         </p>
-        <section className="persons">
+        <section>
           {IMAGES.map((image) => (
             <img src={image}></img>
           ))}

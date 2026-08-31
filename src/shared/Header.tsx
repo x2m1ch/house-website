@@ -49,7 +49,9 @@ export const Header = () => {
           className="nav-buttons"
         >
           {header.map((header) => (
-            <Link to="/">{header}</Link>
+            <Link className="nav-button" to="/">
+              {header}
+            </Link>
           ))}
         </section>
 

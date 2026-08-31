@@ -2,7 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router";
 
 import { HomePage } from "../src/pages/HomePage";
 
-import "./reset.css";
+import "./app/styles/reset.css";
+import "./app/styles/global.css";
+import "./app/styles/fonts.css";
 
 export const App = () => {
   return (

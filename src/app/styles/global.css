@@ -1,0 +1,76 @@
+* {
+  font-weight: 500;
+  font-family: "Raleway";
+}
+
+h2 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 150%;
+}
+
+a {
+  color: #86928b;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+  border-color: #598d66;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 60px;
+
+  color: #598d66;
+}
+
+.button:active {
+  background-color: #376b44;
+  color: white;
+}
+
+.button:hover {
+  background-color: #598d66;
+  color: #f4f6f5;
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  .button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 25px;
+  }
+}

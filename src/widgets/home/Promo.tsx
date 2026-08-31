@@ -9,11 +9,11 @@ export const Promo = () => {
     <section className="promo">
       <section className="promo-header">
         <img src={starPromo} alt="" />
-        <h2 className="heading-promo">Новая коллекция французских авторов</h2>
+        <h2>Новая коллекция французских авторов</h2>
       </section>
 
       <section className="promo-body">
-        <p className="promo-text-body">
+        <p>
           Сложно сказать, почему акционеры крупнейших компаний призывают нас к
           новым свершениям, которые, в свою очередь, должны быть заблокированы в
           рамках своих собственных рациональных ограничений. <br /> <br />{" "}
@@ -21,9 +21,7 @@ export const Promo = () => {
           предопределяет высокую востребованность направлений прогрессивного
           развития.
         </p>
-        <Link to="/" className="show-france-picture">
-          Ознакомиться
-        </Link>
+        <Link to="/">Ознакомиться</Link>
       </section>
     </section>
   );

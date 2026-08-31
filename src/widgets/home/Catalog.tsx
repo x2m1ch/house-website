@@ -15,15 +15,15 @@ export const Catalog = () => {
     data.map((card) => (
       <article id={stateButtonSwitchCards} className="card">
         <section className="card-header">
-          {card.src && <img src={card.src} className="card-image" />}
+          {card.src && <img src={card.src} />}
           <p className="card-creator">{card.creator}</p>
-          <h3 className="card-name">{card.name}</h3>
-          <p className="card-feature">{card.feature}</p>
+          <h3>{card.name}</h3>
+          <p>{card.feature}</p>
         </section>
 
         <section className="card-bottom">
-          <p className="card-price">{card.price}</p>
-          <Link className="add-to-basket" to="/">
+          <p>{card.price}</p>
+          <Link className="button" to="">
             В корзину
           </Link>
         </section>
@@ -40,9 +40,9 @@ export const Catalog = () => {
   return (
     <section className="catalog">
       <section className="catalog-header">
-        <h2 className="catalog-head">Репродукции</h2>
+        <h2>Репродукции</h2>
 
-        <section className="select-country-buttons">
+        <section>
           {BUTTONS.map((button) => {
             const isActive = button == stateButtonSwitchCards;
 
@@ -54,7 +54,7 @@ export const Catalog = () => {
                     ? { backgroundColor: "#376b44", color: "#f4f6f5" }
                     : undefined
                 }
-                className={`${button} cards-switch-buttons`}
+                className={`${button}`}
               >
                 {button == "france"
                   ? "Франция"
@@ -64,25 +64,6 @@ export const Catalog = () => {
               </button>
             );
           })}
-
-          {/* <button
-            onClick={() => setStateButtonSwitchCard("france")}
-            className="france cards-switch-buttons"
-          >
-            Франция
-          </button>
-          <button
-            onClick={() => setStateButtonSwitchCard("germany")}
-            className="germany cards-switch-buttons"
-          >
-            Германия
-          </button>
-          <button
-            onClick={() => setStateButtonSwitchCard("england")}
-            className="england cards-switch-buttons"
-          >
-            Англия
-          </button> */}
         </section>
       </section>
 
