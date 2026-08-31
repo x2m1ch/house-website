@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import birdHero from "/assets/sections/main/hero/bird.png";
 
 import "./styles/hero.css";
@@ -18,9 +20,9 @@ export const Hero = () => {
           Высокое качество отрисовки на плотной бумаге или льняном холсте.
           Редкие произведения, доступные цены.
         </p>
-        <a href="/" className="hero-button">
+        <Link to="" className="hero-button">
           Продукция
-        </a>
+        </Link>
       </section>
     </section>
   );

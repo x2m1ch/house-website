@@ -21,10 +21,10 @@ export const Header = () => {
 
   return (
     <header>
-      <a className="logo" href="/">
+      <Link to="" className="logo">
         <img src={logo} alt="" />
         <h1 className="icon">Ink. House</h1>
-      </a>
+      </Link>
 
       <nav
         style={burgerMenu({

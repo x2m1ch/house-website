@@ -32,11 +32,6 @@
   padding: 10px 20px;
 }
 
-.cards-switch-buttons:active {
-  background-color: #376b44;
-  color: #f4f6f5;
-}
-
 .cards-switch-buttons:hover {
   background-color: #598d66;
   color: #f4f6f5;

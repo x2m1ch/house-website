@@ -40,6 +40,7 @@ footer {
 .footer-center-columns {
   gap: 20px;
   display: flex;
+  align-items: baseline;
   flex-direction: column;
 }
 

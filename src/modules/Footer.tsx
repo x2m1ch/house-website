@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import logo from "/assets/favicon/icon.svg";
 
 import "./styles/footer.css";
@@ -61,10 +63,10 @@ export const Footer = () => {
   return (
     <footer>
       <section className="footer-left">
-        <div className="footer-logo">
+        <Link to="" className="footer-logo">
           <img src={logo} alt="" />
           <h2 className="icon">Ink. House</h2>
-        </div>
+        </Link>
 
         <section className="footer-left-bottom">
           <p style={{ color: "#2C2D35" }}>+7 (999) 543-54-54</p>
@@ -84,7 +86,7 @@ export const Footer = () => {
                     <h2>{column.name}</h2>
                     <section className="columns-body">
                       {column.body.map((body) => (
-                        <p>{body}</p>
+                        <Link to="">{body}</Link>
                       ))}
                     </section>
                   </section>
@@ -95,7 +97,11 @@ export const Footer = () => {
                 {RIGHT_COLUMNS.map((column) => (
                   <section className={column.name}>
                     {column.name == "messanger-logos" ? (
-                      IMAGES.map((image) => <img src={image}></img>)
+                      IMAGES.map((image) => (
+                        <Link to="">
+                          <img src={image}></img>
+                        </Link>
+                      ))
                     ) : (
                       <>
                         <p>Ink. House ®</p>
