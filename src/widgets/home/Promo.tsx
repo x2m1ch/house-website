@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 import starPromo from "/assets/sections/main/promo/star.svg";
 
-import "./styles/promo.css";
+import "../../app/styles/pages/home/widgets/promo.css";
 
 export const Promo = () => {
   return (

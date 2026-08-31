@@ -1,11 +1,11 @@
-import { Header } from "../modules/Header";
-import { Hero } from "../modules/Hero";
-import { Catalog } from "../modules/Catalog";
-import { Promo } from "../modules/Promo";
-import { OurTeam } from "../modules/OurTeam";
-import { Footer } from "../modules/Footer";
+import { Header } from "../shared/Header";
+import { Hero } from "../widgets/home/Hero";
+import { Catalog } from "../widgets/home/Catalog";
+import { Promo } from "../widgets/home/Promo";
+import { OurTeam } from "../widgets/home/OurTeam";
+import { Footer } from "../shared/Footer";
 
-import "./styles/home-page.css";
+import "../app/styles/pages/home/home-page.css";
 
 export const HomePage = () => {
   return (

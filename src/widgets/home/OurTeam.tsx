@@ -1,6 +1,6 @@
 import ourTeamImage from "/assets/sections/main/our-team/our-team-img.png";
 
-import "./styles/our-team.css";
+import "../../app/styles/pages/home/widgets/our-team.css";
 
 const baseUrl = import.meta.env.BASE_URL;
 

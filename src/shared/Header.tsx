@@ -8,7 +8,7 @@ import busketActive from "/assets/sections/header/basket-active.svg";
 import burger from "/assets/sections/header/burger.svg";
 import burgerActive from "/assets/sections/header/burger-active.svg";
 
-import "./styles/header.css";
+import "../app/styles/widgets/header.css";
 
 const header = ["Репродукции", "Новинки", "О нас"];
 

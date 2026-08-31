@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 import logo from "/assets/favicon/icon.svg";
 
-import "./styles/footer.css";
+import "../app/styles/widgets/footer.css";
 
 const baseUrl = import.meta.env.BASE_URL;
 

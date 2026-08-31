@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 import birdHero from "/assets/sections/main/hero/bird.png";
 
-import "./styles/hero.css";
+import "../../app/styles/pages/home/widgets/hero.css";
 
 export const Hero = () => {
   return (

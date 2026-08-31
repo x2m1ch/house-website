@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
-import { type Card, France, Germany, England } from "./cards";
+import { type Card, France, Germany, England } from "../../entities/home/cards";
 
-import "./styles/catalog.css";
-import "./styles/cards.css";
+import "../../app/styles/pages/home/widgets/catalog.css";
+import "../../app/styles/pages/home/widgets/cards.css";
 
 const BUTTONS = ["france", "germany", "england"];
 
