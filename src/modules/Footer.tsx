@@ -2,6 +2,8 @@ import logo from "/assets/favicon/icon.svg";
 
 import "./styles/footer.css";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 interface Column {
   name: string;
 }
@@ -41,9 +43,9 @@ const CENTER_COLUMNS: CenterColumn[] = [
 ];
 
 const IMAGES = [
-  "/assets/sections/footer/facebook.svg",
-  "/assets/sections/footer/youtube.svg",
-  "/assets/sections/footer/instagram.svg",
+  `${baseUrl}assets/sections/footer/facebook.svg`,
+  `${baseUrl}assets/sections/footer/youtube.svg`,
+  `${baseUrl}assets/sections/footer/instagram.svg`,
 ];
 
 const RIGHT_COLUMNS: Column[] = [
@@ -110,5 +112,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

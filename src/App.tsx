@@ -4,14 +4,12 @@ import { HomePage } from "./pages/HomePage";
 
 import "./reset.css";
 
-const App = () => {
+export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/house-website/">
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );
 };
-
-export default App;

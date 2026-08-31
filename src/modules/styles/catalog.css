@@ -72,5 +72,6 @@
 @media (max-width: 463px) {
   .select-country-buttons {
     overflow-x: scroll;
+    scrollbar-width: none;
   }
 }

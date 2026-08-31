@@ -2,10 +2,12 @@ import ourTeamImage from "/assets/sections/main/our-team/our-team-img.png";
 
 import "./styles/our-team.css";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const IMAGES = [
-  "/assets/sections/main/our-team/team-persons/person-one.svg",
-  "/assets/sections/main/our-team/team-persons/person-two.svg",
-  "/assets/sections/main/our-team/team-persons/person-three.svg",
+  `${baseUrl}assets/sections/main/our-team/team-persons/person-one.svg`,
+  `${baseUrl}assets/sections/main/our-team/team-persons/person-two.svg`,
+  `${baseUrl}assets/sections/main/our-team/team-persons/person-three.svg`,
 ];
 
 export const OurTeam = () => {
@@ -19,9 +21,9 @@ export const OurTeam = () => {
         <h2 className="our-team-head">Наша команда</h2>
         <p className="our-team-body">
           Значимость этих проблем настолько очевидна, что базовый вектор
-          развития позволяет оценить значение экспериментов, поражающих
-          по своей масштабности и грандиозности. Мы вынуждены отталкиваться
-          от того, что консультация с широким активом.
+          развития позволяет оценить значение экспериментов, поражающих по своей
+          масштабности и грандиозности. Мы вынуждены отталкиваться от того, что
+          консультация с широким активом.
         </p>
         <section className="persons">
           {IMAGES.map((image) => (
@@ -32,5 +34,3 @@ export const OurTeam = () => {
     </section>
   );
 };
-
-export default OurTeam;
