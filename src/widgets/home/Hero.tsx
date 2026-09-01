@@ -1,10 +1,13 @@
 import { Link } from "react-router";
+import { useState } from "react";
 
 import birdHero from "/assets/widgets/home/hero/bird.png";
 
 import "../../app/styles/pages/home/widgets/hero.css";
 
 export const Hero = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <section className="hero">
       <section className="hero-image">
@@ -20,7 +23,7 @@ export const Hero = () => {
           Высокое качество отрисовки на плотной бумаге или льняном холсте.
           Редкие произведения, доступные цены.
         </p>
-        <Link className="button" to="">
+        <Link className="hero-button" to="">
           Продукция
         </Link>
       </section>

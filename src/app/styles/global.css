@@ -20,7 +20,7 @@ a {
   display: flex;
   justify-content: center;
 
-  background-color: white;
+  background-color: #e1ede6;
   border-color: #598d66;
   border-width: 1px;
   border-style: solid;
@@ -37,6 +37,19 @@ a {
 .button:hover {
   background-color: #598d66;
   color: #f4f6f5;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+  border-color: #598d66;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 60px;
+
+  color: #598d66;
 }
 
 @media (max-width: 1000px) {
